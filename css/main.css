@@ -1,11 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #cccccc;
 }
-hr {
-  color: #7a7a7a;
-} 
 .nav ul {
   list-style: none;
   background-color: #444;
