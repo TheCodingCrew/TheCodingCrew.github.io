@@ -24,6 +24,29 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="./images/favicon.png">
+  
+  <style>
+    /*We can remove this later, but testing for now*/
+    
+    div.iframe-link {
+  position: relative;
+  float: left;
+  width: 115%;
+  height: 516px;
+  margin: 0 1em 1em 0;
+}
+a.iframe-link {
+  text-decoration:none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width:105%;
+  height:516px;
+}
+    
+  </style>
 
 </head>
 <body>
@@ -58,8 +81,13 @@
     <hr>
     <div class="row">
       <div class="column">
-        <h4>Our Tutorials</h4>
-        <p>We have tutorials for learning HTML and hopefully more in the future!</p>
+        <h4>HTML Tutorials</h4>
+        <div class="iframe-link">
+          <iframe src="https://www.youtube.com/playlist?list=PLmtAreUmGbO1i7hor_rGi5i28Y_FinWdN" width="105%" height="516" frameborder="0" scrolling="no" seamless="seamless">
+          </iframe> 
+          <a class="iframe-link" href="https://www.youtube.com/playlist?list=PLmtAreUmGbO1i7hor_rGi5i28Y_FinWdN" target="_blank"> &nbsp;</a>
+</div>
+        <p>Brought to you by: [list all]</p>
       </div>
     </div>
     <div class="row">
