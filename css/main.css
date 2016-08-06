@@ -2,64 +2,42 @@ body {
   margin: 0;
   padding: 0;
 }
-.nav ul {
-  list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+
+nav.primary{
+  display: table;
+  margin: 0 auto;
 }
-.nav li {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2em;
-  line-height: 40px;
-  height: 40px;
-  border-bottom: 1px solid #888;
+
+nav.primary ul, nav.primary ul li {
+  margin: 0px;
 }
- 
-.nav a {
+
+nav.primary select {
+  display: none;
+  width:  100%;
+  height: 28px;
+  margin: 21px 0;
+}
+
+nav.primary ul li {
+  display: inline;
+  float: left;
+  position: relative;
+}
+
+nav.primary ul li a {
+  display: inline-block;
+  line-height: 49px;
+  padding:  0 14px;
+  color: white;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: .3s background-color;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  background: ##999999;
 }
- 
-.nav a:hover {
-  background-color: #005f5f;
-}
- 
-.nav a.active {
-  background-color: #fff;
-  color: #444;
-  cursor: default;
-}
- 
-@media screen and (min-width: 600px) {
-  .nav li {
-    width: 120px;
-    border-bottom: none;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-  }
- 
-  /* Option 1 - Display Inline */
-  .nav li {
-    display: inline-block;
-    margin-right: -4px;
-  }
- 
-  /* Options 2 - Float
-  .nav li {
-    float: left;
-  }
-  .nav ul {
-    overflow: auto;
-    width: 600px;
-    margin: 0 auto;
-  }
-  .nav {
-    background-color: #444;
-  }
-  */
+
+nav.primary ul li a:hover {
+  background: #2ecc71;
+  cursor: pointer;
 }
