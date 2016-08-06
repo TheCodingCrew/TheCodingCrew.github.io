@@ -15,27 +15,3 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
-.slide {
-    position: relative;
-    padding: 25vh 10%;
-    min-height: 100vh;
-    width: 100vw;
-    box-sizing: border-box;
-    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-    transform-style: inherit;
-    transform: translateZ(-1px) scale(2);
-    z-index:-1;
-}
-.slide:nth-child(2n) .title {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) .title {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;  
-}
