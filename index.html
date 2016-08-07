@@ -29,6 +29,22 @@
     <style>
         /*We can remove this later, but testing for now*/
         
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        .wrapper {
+            min-height: 100%;
+            /* Equal to height of footer */
+            /* But also accounting for potential margin-bottom of last child */
+            
+            margin-bottom: -50px;
+        }
+        .footer,
+        .push {
+            height: 50px;
+        }
         div.iframe-link {
             position: relative;
             float: left;
@@ -51,40 +67,44 @@
 </head>
 
 <body>
-    <div style="background-color:#7DC4F0;">
-        <div class="container">
-            <div class="row">
-                <div class="offset-by-one-third one-half column" style="margin-top: 10%;" id="mainpagetitle">
-                    <h1>The Coding Crew</h1>
+    <div class="wrapper">
+        <div style="background-color:#7DC4F0;">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-by-one-third one-half column" style="margin-top: 10%;" id="mainpagetitle">
+                        <h1>The Coding Crew</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="offset-by-one one-half column" style=" margin-top:15%;margin-bottom: 35%">
-                    <p>"I like coding because it lets me make my own applications and programs. Plus its fun!" - HittmanA</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="background-color:#8ac9f1;">
-        <div class="container">
-            <div class="row">
-                <div class="one-half column" style="">
-                    <h4>About Us</h4>
-                    <p>The coding crew is a group of developers that makes tutorial videos for technical things such as creating a website and posts them on YouTube.</p>
+                <div class="row">
+                    <div class="offset-by-one one-half column" style=" margin-top:15%;margin-bottom: 35%">
+                        <p>"I like coding because it lets me make my own applications and programs. Plus its fun!" - HittmanA</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div style="background-color:#97cff3;">
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <h4>Our Tutorials</h4>
-                    <p>We have tutorials for learning HTML and hopefully more in the future!</p>
+        <div style="background-color:#8ac9f1;">
+            <div class="container">
+                <div class="row">
+                    <div class="one-half column" style="">
+                        <h4>About Us</h4>
+                        <p>The coding crew is a group of developers that makes tutorial videos for technical things such as creating a website and posts them on YouTube.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div style="background-color:#97cff3;">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <h4>Our Tutorials</h4>
+                        <p>We have tutorials for learning HTML and hopefully more in the future!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="push"></div>
     </div>
+    <footer class="footer">Test</footer>
     <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
